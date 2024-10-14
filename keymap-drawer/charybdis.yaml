@@ -1,28 +1,28 @@
 layers:
-  BASE:
+  '0':
   - SEARCH
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
+  - D
+  - F
+  - K
+  - J
   - U
-  - I
-  - O
-  - P
+  - R
+  - L
+  - {t: ;, h: ':'}
   - {t: GAME, h: toggle}
   - {t: TAB, h: WINDOW}
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - {t: E, h: LCTRL}
+  - {t: T, h: LEFT SHIFT}
   - G
-  - H
-  - {t: J, h: LEFT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: LEFT META}
+  - Y
+  - {t: N, h: LEFT SHIFT}
+  - {t: I, h: RCTRL}
+  - {t: O, h: RIGHT ALT}
+  - {t: H, h: LEFT META}
   - DEL
   - SHELL
   - Z
@@ -30,7 +30,7 @@ layers:
   - {t: C, h: HYPER}
   - V
   - B
-  - N
+  - P
   - M
   - {t: ',', h: HYPER}
   - {t: ., h: MEH}
@@ -38,9 +38,9 @@ layers:
   - {t: PHOTOS, h: toggle}
   - SCROLL SNIPE
   - {t: BACK SPACE, h: NUM}
-  - {t: ESCAPE, h: NAV}
-  - {t: RETURN, h: MOUSE}
   - {t: SPACE, h: SYM}
+  - {t: RETURN, h: MOUSE}
+  - {t: ESCAPE, h: '2'}
   NUM:
   - ''
   - ''
@@ -83,7 +83,7 @@ layers:
   - ''
   - '0'
   - ''
-  NAV:
+  '2':
   - ''
   - ''
   - ''
@@ -122,9 +122,9 @@ layers:
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   SYM:
   - ''
   - +
@@ -164,9 +164,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
   - {type: held}
+  - ''
+  - {t: ▽, type: trans}
   GAME:
   - '1'
   - TAB
@@ -179,7 +179,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BASE, h: toggle}
+  - {t: '0', h: toggle}
   - '2'
   - LCTRL
   - A
@@ -245,7 +245,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BASE, h: toggle}
+  - {t: '0', h: toggle}
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
@@ -422,9 +422,9 @@ layers:
 combos:
 - p: [8, 9]
   k: DELETE
-  l: [BASE]
+  l: ['0']
 - p: [17, 18]
   k: CAPS WORD
-  l: [BASE]
+  l: ['0']
 - p: [38, 39]
   k: L_BASE L_EXTRA
