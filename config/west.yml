@@ -5,7 +5,7 @@ manifest:
     - name: pmw3610k-driver
       url-base: https://github.com/inorichi
     - name: urob
-      url-base: https://github.com/urobc
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
