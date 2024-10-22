@@ -133,14 +133,14 @@
         BASE {
             bindings = <
 // ╭────────────────┬──────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────╮  ╭──────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬─────────╮
-    &kp C_AC_SEARCH  &kp Q           &kp W                     &kp D                         &kp F               &kp K           &kp J          &kp U             &kp R                              &kp L                          &mt COLON SEMICOLON       &to 4
+    &lt SYS ESC      &kp Q           &kp W                     &lt DIG D                     &kp F              &kp K            &kp J           &kp U             &lt DIG R                          &kp L                          &mt COLON SEMICOLON       &to 4
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────┤  ├──────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼─────────┤
-    &hm LG(E) TAB    &hm LEFT_GUI A  &hm LEFT_ALT S            &hm LCTRL E                   &hm LEFT_SHIFT T    &kp G           &kp Y          &hm LEFT_SHIFT N  &hm RCTRL I                        &hm RIGHT_ALT O                &hm LEFT_META H           &kp DEL
+    &hm LG(E) TAB    &hm LEFT_GUI A  &hm LEFT_ALT S            &hm LCTRL E                   &hm LEFT_SHIFT T   &kp G            &kp Y           &hm LEFT_SHIFT N  &hm RCTRL I                        &hm RIGHT_ALT O                &hm LEFT_META H           &kp DEL
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────┤  ├──────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼─────────┤
-    &kp LA(LC(T))    &kp Z           &hm LC(LA(LEFT_SHIFT)) X  &hm LA(LC(LG(LEFT_SHIFT))) C  &kp V               &kp B           &kp P          &kp M             &hm LA(LC(LG(LEFT_SHIFT))) COMMA   &hm LC(LA(LEFT_SHIFT)) PERIOD  &kp FSLH                  &to 5
+    &kp LA(LC(T))    &kp Z           &hm LC(LA(LEFT_SHIFT)) X  &hm LA(LC(LG(LEFT_SHIFT))) C  &kp V              &kp B            &kp P           &kp M             &hm LA(LC(LG(LEFT_SHIFT))) COMMA   &hm LC(LA(LEFT_SHIFT)) PERIOD  &kp FSLH                  &to 5
 // ╰────────────────┴──────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────┤  ├──────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴─────────╯
-                                                               &tdtb2                         &lt 1 BACKSPACE   &lt 3 SPACE      &lt 7 RETURN   &lt 2 ESCAPE
-                                                          // ╰─────────────────────────────┴──────────────────┴──────────────╯  ╰──────────────┴─────────────────╯
+                                                               &sk LEFT_COMMAND              &kp SPACE          &mo DIG          &lt SYS ESC     &kp RET
+//                                                           ╰─────────────────────────────┴──────────────────┴──────────────╯  ╰──────────────┴─────────────────╯
             >;
         };
 
