@@ -114,6 +114,63 @@ MAKE_HRM(hmr_cmd, &lm, &ru_o, KEYS_L THUMBS)
             #binding-cells = <0>;
             bindings = <&mo 6>, <&to 0>;
         };
+
+        comment_or: comment_or {
+            compatible = "zmk,behavior-hold-tap";
+            label = "slash_or_comm";
+            bindings = <&comment>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ru_sh_or_shch: ru_sh_or_shch {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_SH_OR_SHCH";
+            bindings = <&ru_shch>, <&ru_sh>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ru_b_or: ru_b_or {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_B_OR_COMA";
+            bindings = <&kp>, <&ru_b>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ru_yu_or: ru_yu_or {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_YU_OR_DOT";
+            bindings = <&kp>, <&ru_yu>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        ru_kh_or_e: ru_kh_or_e {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_KH_OR_E";
+            bindings = <&ru_e>, <&ru_kh>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        all_quotes: all_quotes {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt GRAVE SQT>, <&kp DOUBLE_QUOTES>;
+        };
     };
 
     macros {
@@ -268,9 +325,9 @@ MAKE_HRM(hmr_cmd, &lm, &ru_o, KEYS_L THUMBS)
 // ╭────────────────┬──────────────┬─────────────────────────┬─────────────────────────────┬──────────────────┬──────────────╮  ╭──────────────┬─────────────────┬──────────────────────────────────┬──────────────────────────────┬────────────────────────┬─────────╮
     &lt SYS ESC       &kp Q          &kp W                     &lt DIG D                     &kp F              &kp K             &kp J          &kp U             &lt DIG R                          &kp L                          &mt COLON SEMICOLON       &to 4
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────┤  ├──────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼─────────┤
-    &kp LSHFT         &hml LCTRL A   &hml LALT S               &hml LSHFT E                  &hml_layer NAV T   &kp G             &kp Y          &hmr RIGHT_GUI N  &hmr RSHFT I                       &hmr RIGHT_ALT O               &hmr RIGHT_CONTROL H     &kp DEL
+    &kp TAB           &hml LCTRL A   &hml LALT S               &hml LSHFT E                  &hml_layer NAV T   &kp G             &kp Y          &hmr RIGHT_GUI N  &hmr RSHFT I                       &hmr RIGHT_ALT O               &hmr RIGHT_CONTROL H     &kp DEL
 // ├────────────────┼──────────────┼─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────┤  ├──────────────┼─────────────────┼──────────────────────────────────┼──────────────────────────────┼────────────────────────┼─────────┤
-    &kp TAB           &kp Z          &kp X                     &kp C                         &kp V              &kp B             &kp P          &kp M             &kp COMMA                          &kp DOT                        &comment_or 0 SLASH     &all_quotes
+    &kp LSHFT         &kp Z          &kp X                     &kp C                         &kp V              &kp B             &kp P          &kp M             &kp COMMA                          &kp DOT                        &comment_or 0 SLASH     &all_quotes
 // ╰────────────────┴──────────────┴─────────────────────────┼─────────────────────────────┼──────────────────┼──────────────┤  ├──────────────┼─────────────────┼──────────────────────────────────┴──────────────────────────────┴────────────────────────┴─────────╯
                                                                &sk LEFT_COMMAND              &kp SPACE          &mo DIG           &lt SYS ESC    &kp RET
 //                                                           ╰─────────────────────────────┴──────────────────┴──────────────╯  ╰──────────────┴─────────────────╯
