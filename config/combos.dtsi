@@ -41,13 +41,6 @@
             require-prior-idle-ms = <150>;
         };
 
-        combo_to_rus {
-            bindings = <&to_russian>;
-            key-positions = <LM0 RM0>;
-            timeout-ms = <250>;
-            require-prior-idle-ms = <200>;
-        };
-
         combo_to_eng {
             bindings = <&to_eng>;
             key-positions = <LB0 RB0>;
