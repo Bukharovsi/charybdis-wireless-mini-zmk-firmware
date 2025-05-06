@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - L CLK
-  - {t: ▽, type: trans}
+  - '&msc MOVE_Y(0)'
   - R CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
