@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: ;, h: RIGHT SHIFT}
-  - ''''
+  - '&all_quotes'
   - LEFT GUI
   - Z
   - X
@@ -336,3 +336,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [8, 9]
+  k: BACK SPACE
+- p: [7, 8, 9]
+  k: Alt+ BACK SPACE
+- p: [15, 16]
+  k: {t: LEFT SHIFT, h: sticky}
+- p: [14, 15, 16]
+  k: CAPS WORD
