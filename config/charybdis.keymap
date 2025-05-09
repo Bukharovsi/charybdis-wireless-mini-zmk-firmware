@@ -22,6 +22,8 @@
 #define SCROLL 6
 #define SNIPE 7
 
+&mt { flavor = "balanced"; };
+
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
