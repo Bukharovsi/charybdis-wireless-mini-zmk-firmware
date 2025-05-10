@@ -32,7 +32,7 @@
         // scaler: first is multiplier, second one is divider.
         // temp layer: first argument is layer, second is time in ms
 
-        input-processors = <&zip_xy_scaler 1 3>, <&zip_temp_layer MOUSE 1000>;
+        input-processors = <&zip_xy_scaler 1 6>, <&zip_temp_layer MOUSE 1000>;
 
         snipe {
             layers = <SNIPE>;
