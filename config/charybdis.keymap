@@ -25,12 +25,22 @@
 &mt { flavor = "balanced"; };
 
 / {
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        // difines number of milliseconds no keys are pressed before swithcing to a new layear.
+        require-prior-idle-ms = <2000>; 
+    };
+};
+
+/ {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&vtrackball>;
 
         // scaler: first is multiplier, second one is divider.
         // temp layer: first argument is layer, second is time in ms
+        // zip_temp_layer: switch to a new layer after trackball moves, and stay on the layear for amount of millis
 
         input-processors = <&zip_xy_scaler 1 6>, <&zip_temp_layer MOUSE 1000>;
 
